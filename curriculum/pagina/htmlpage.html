@@ -1,0 +1,544 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyectos de Michael</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+
+        header {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 2.5rem 0;
+        }
+
+        main {
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 0 1.5rem;
+        }
+
+        .seccion {
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            margin-bottom: 2rem;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        h2 {
+            margin-top: 0;
+            color: #2c3e50;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+        }
+
+        .info-cv {
+            line-height: 1.6;
+        }
+
+        .controles-juegos {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        button {
+            padding: 12px 24px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            transition: background-color 0.3s, transform 0.1s;
+        }
+
+            button:hover {
+                background-color: #2980b9;
+            }
+
+            button:active {
+                transform: scale(0.95);
+            }
+
+        .contenedor-juego {
+            width: 100%;
+            height: 500px;
+            border: 3px solid #34495e;
+            border-radius: 8px;
+            overflow: hidden;
+            background-color: #000;
+        }
+
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>proyectos de michael</h1>
+    </header>
+
+    <main>
+        <section class="seccion">
+            <h2>Currículum Vitae</h2>
+            <div class="info-cv">
+                <p><strong>Perfil Profesional:</strong> Desarrollador apasionado por la creación de software y videojuegos interactivos.</p>
+                <p><strong>Habilidades:</strong> Desarrollo Web, Programación de Videojuegos, Diseño de Niveles, Resolución de Problemas.</p>
+                <p><strong>Experiencia:</strong> Creador de múltiples proyectos independientes jugables desde el navegador.</p>
+                <p><strong>Contacto:</strong> correo@ejemplo.com</p>
+            </div>
+        </section>
+
+        <section class="seccion">
+            <h2>Mis Juegos</h2>
+            <div class="controles-juegos">
+                <button onclick="cargarJuego('juegos/index.html')">Juego 1</button>
+                <button onclick="cargarJuego('ruta/a/tu/juego2/index.html')">Juego 2</button>
+                <button onclick="cargarJuego('https://html5.gamedistribution.com/rvvASMiMhKXzITudPNcGyl5PePNxwOB3/')">Demo Online</button>
+            </div>
+
+            <div class="contenedor-juego">
+                <iframe id="pantalla-juego" src="about:blank" title="Pantalla de ejecución de juegos"></iframe>
+            </div>
+        </section>
+    </main>
+
+    <script>
+  function cargarJuego(ruta) {
+    const pantalla = document.getElementById('pantalla-juego');
+    pantalla.src = ruta;
+  }
+    </script>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyectos de Michael</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+
+        header {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 2.5rem 0;
+        }
+
+        main {
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 0 1.5rem;
+        }
+
+        .seccion {
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            margin-bottom: 2rem;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        h2 {
+            margin-top: 0;
+            color: #2c3e50;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+        }
+
+        .info-cv {
+            line-height: 1.6;
+        }
+
+        .controles-juegos {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        button {
+            padding: 12px 24px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            transition: background-color 0.3s, transform 0.1s;
+        }
+
+            button:hover {
+                background-color: #2980b9;
+            }
+
+            button:active {
+                transform: scale(0.95);
+            }
+
+        .contenedor-juego {
+            width: 100%;
+            height: 500px;
+            border: 3px solid #34495e;
+            border-radius: 8px;
+            overflow: hidden;
+            background-color: #000;
+        }
+
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>proyectos de michael</h1>
+    </header>
+
+    <main>
+        <section class="seccion">
+            <h2>Currículum Vitae</h2>
+            <div class="info-cv">
+                <p><strong>Perfil Profesional:</strong> Desarrollador apasionado por la creación de software y videojuegos interactivos.</p>
+                <p><strong>Habilidades:</strong> Desarrollo Web, Programación de Videojuegos, Diseño de Niveles, Resolución de Problemas.</p>
+                <p><strong>Experiencia:</strong> Creador de múltiples proyectos independientes jugables desde el navegador.</p>
+                <p><strong>Contacto:</strong> correo@ejemplo.com</p>
+            </div>
+        </section>
+
+        <section class="seccion">
+            <h2>Mis Juegos</h2>
+            <div class="controles-juegos">
+                <button onclick="cargarJuego('ruta/a/tu/juego1/index.html')">Juego 1</button>
+                <button onclick="cargarJuego('ruta/a/tu/juego2/index.html')">Juego 2</button>
+                <button onclick="cargarJuego('https://html5.gamedistribution.com/rvvASMiMhKXzITudPNcGyl5PePNxwOB3/')">Demo Online</button>
+            </div>
+
+            <div class="contenedor-juego">
+                <iframe id="pantalla-juego" src="about:blank" title="Pantalla de ejecución de juegos"></iframe>
+            </div>
+        </section>
+    </main>
+
+    <script>
+  function cargarJuego(ruta) {
+    const pantalla = document.getElementById('pantalla-juego');
+    pantalla.src = ruta;
+  }
+    </script>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyectos de Michael</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+
+        header {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 2.5rem 0;
+        }
+
+        main {
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 0 1.5rem;
+        }
+
+        .seccion {
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            margin-bottom: 2rem;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        h2 {
+            margin-top: 0;
+            color: #2c3e50;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+        }
+
+        .info-cv {
+            line-height: 1.6;
+        }
+
+        .controles-juegos {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        button {
+            padding: 12px 24px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            transition: background-color 0.3s, transform 0.1s;
+        }
+
+            button:hover {
+                background-color: #2980b9;
+            }
+
+            button:active {
+                transform: scale(0.95);
+            }
+
+        .contenedor-juego {
+            width: 100%;
+            height: 500px;
+            border: 3px solid #34495e;
+            border-radius: 8px;
+            overflow: hidden;
+            background-color: #000;
+        }
+
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>proyectos de michael</h1>
+    </header>
+
+    <main>
+        <section class="seccion">
+            <h2>Currículum Vitae</h2>
+            <div class="info-cv">
+                <p><strong>Perfil Profesional:</strong> Desarrollador apasionado por la creación de software y videojuegos interactivos.</p>
+                <p><strong>Habilidades:</strong> Desarrollo Web, Programación de Videojuegos, Diseño de Niveles, Resolución de Problemas.</p>
+                <p><strong>Experiencia:</strong> Creador de múltiples proyectos independientes jugables desde el navegador.</p>
+                <p><strong>Contacto:</strong> correo@ejemplo.com</p>
+            </div>
+        </section>
+
+        <section class="seccion">
+            <h2>Mis Juegos</h2>
+            <div class="controles-juegos">
+                <button onclick="cargarJuego('ruta/a/tu/juego1/index.html')">Juego 1</button>
+                <button onclick="cargarJuego('ruta/a/tu/juego2/index.html')">Juego 2</button>
+                <button onclick="cargarJuego('https://html5.gamedistribution.com/rvvASMiMhKXzITudPNcGyl5PePNxwOB3/')">Demo Online</button>
+            </div>
+
+            <div class="contenedor-juego">
+                <iframe id="pantalla-juego" src="about:blank" title="Pantalla de ejecución de juegos"></iframe>
+            </div>
+        </section>
+    </main>
+
+    <script>
+  function cargarJuego(ruta) {
+    const pantalla = document.getElementById('pantalla-juego');
+    pantalla.src = ruta;
+  }
+    </script>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyectos de Michael</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+
+        header {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 2.5rem 0;
+        }
+
+        main {
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 0 1.5rem;
+        }
+
+        .seccion {
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            margin-bottom: 2rem;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        h2 {
+            margin-top: 0;
+            color: #2c3e50;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+        }
+
+        .info-cv {
+            line-height: 1.6;
+        }
+
+        .controles-juegos {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        button {
+            padding: 12px 24px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            transition: background-color 0.3s, transform 0.1s;
+        }
+
+            button:hover {
+                background-color: #2980b9;
+            }
+
+            button:active {
+                transform: scale(0.95);
+            }
+
+        .contenedor-juego {
+            width: 100%;
+            height: 500px;
+            border: 3px solid #34495e;
+            border-radius: 8px;
+            overflow: hidden;
+            background-color: #000;
+        }
+
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>proyectos de michael</h1>
+    </header>
+
+    <main>
+        <section class="seccion">
+            <h2>Currículum Vitae</h2>
+            <div class="info-cv">
+                <p><strong>Perfil Profesional:</strong> Desarrollador apasionado por la creación de software y videojuegos interactivos.</p>
+                <p><strong>Habilidades:</strong> Desarrollo Web, Programación de Videojuegos, Diseño de Niveles, Resolución de Problemas.</p>
+                <p><strong>Experiencia:</strong> Creador de múltiples proyectos independientes jugables desde el navegador.</p>
+                <p><strong>Contacto:</strong> correo@ejemplo.com</p>
+            </div>
+        </section>
+
+        <section class="seccion">
+            <h2>Mis Juegos</h2>
+            <div class="controles-juegos">
+                <button onclick="cargarJuego('ruta/a/tu/juego1/index.html')">Juego 1</button>
+                <button onclick="cargarJuego('ruta/a/tu/juego2/index.html')">Juego 2</button>
+                <button onclick="cargarJuego('https://html5.gamedistribution.com/rvvASMiMhKXzITudPNcGyl5PePNxwOB3/')">Demo Online</button>
+            </div>
+
+            <div class="contenedor-juego">
+                <iframe id="pantalla-juego" src="about:blank" title="Pantalla de ejecución de juegos"></iframe>
+            </div>
+        </section>
+    </main>
+
+    <script>
+  function cargarJuego(ruta) {
+    const pantalla = document.getElementById('pantalla-juego');
+    pantalla.src = ruta;
+  }
+    </script>
+
+</body>
+</html></html>
